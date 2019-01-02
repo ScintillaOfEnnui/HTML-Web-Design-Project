@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Player and Song Lyrics</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav id="nav">
+            <a id="logo" class="logo" href="/HTML/First/index.html">
+                <img src="Images/catface.png">
+            </a>
+            <div class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn">Projects 
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">2 Columns</a>
+                        <a href="#">3 Columns</a>
+                        <a href="#">4 Columns</a>
+                    </div>
+                </div>
+                <a href="#FAQs">FAQs</a>
+                <a href="#About">About</a> 
+            </div>    
+    </nav>
+    <div class="topbox"> 
+        <h1>Music Player and Lyrics</h1> 
+        <br> <br> <br>
+        <p class="pcont"> I wanted to create a Webpage where I could listen to my favorite songs and see its lyrics at the same time.</p>
+    </div>
+    <div class="colLeft">
+        <div class="titleCont"> 
+            <div class="songImg"> </div>
+            <marquee behavior="scroll" direction="left">Song Title: Eine Kleine by Yonezu Kenshi</marquee>
+
+        </div>
+        <div class="audioCont"> 
+            <audio controls autoplay loop>
+                <source class="awdyo" src="Audio/EineKleine-YonezuKenshi.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+    </div>
+     <div class="colMid">
+        <p>List</p>
+    </div>
+    <div class="colRight">
+       
+    </div>
+
+    <footer>
+        <div class="fcont" >
+            <a href="/">a<img src=""></a>
+            <a href="/">a<img src=""></a>
+            <a href="/">a<img src=""></a>
+            <a href="/">a<img src=""></a>
+            <p>&copy;2018</p>
+        </div>
+    </footer>
+    <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav").style.top = "0";
+        document.getElementById("logo").style.opacity = "1.0";
+    } else {
+        document.getElementById("nav").style.top = "-80px";
+        document.getElementById("logo").style.opacity = "0.0";
+    }
+    prevScrollpos = currentScrollPos;
+    }
+    </script>
+</body>
+</html>

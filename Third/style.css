@@ -1,0 +1,221 @@
+*{margin: 0; padding: 0; font-family: Arial}
+body{
+	background: url(Images/topbox.jpg)top center no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: auto;
+	background-color: #7b7d7b;
+	margin: 0px auto 40px;
+}
+
+nav{
+	width: 80%;
+	background-color: rgba(1,1,1,0.6);
+	height: 120px;
+	position: fixed;
+	padding: 0px 10%;
+	top: 0px;
+	z-index: 100;
+}
+
+.logo{
+	height: 120px;
+	width: 30%;
+	display: flex;
+	float: left;
+}
+
+.logo img{
+	width: 100%;
+	height: 120px;
+}
+.logo img:hover{
+	opacity:0.8;
+	padding: 2px;
+}
+
+.navbar{
+  overflow: hidden;
+  font-family: Arial;
+  height: 120px;
+  width: 30%;
+  display:table-cell;
+  vertical-align: bottom;
+}
+
+.navbar a{
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 8px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.dropdown{
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn{
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 8px 25px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+  background-color: orange;
+
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 105px;
+  z-index: 1;
+  border-left: white 1px solid;
+}
+
+.dropdown-content a{
+  float: none;
+  color: black;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover{
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.topbox{
+	padding: 20px;
+	margin: 150px auto 50px;
+	height: 450px;
+	width: 80%;
+	z-index: 10;
+}
+
+.topbox h1{
+	color: white;
+	font-size: 60px;
+	font-family: Georgia;
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+.topbox p{
+	color: white;
+	font-size: 50px;
+	font-family: Tahoma;
+	text-align: center;
+	width: 100%;
+	display: block;
+	text-shadow: 2px 2px 8px #000;
+}
+
+
+.colMid{
+	background-color: #f7efdc;
+	height: 500px;
+	width: 25%;
+	display: block;
+	float: right;
+	border-top: red 4px solid;
+	padding: 0px;
+	
+}
+.titleCont{
+	background: url(Images/background.png) top center repeat;
+	background-size: cover;
+	width: 90%;
+	height: 71%;
+	display: block;
+	font-family: Tahoma;
+	font-size: 30px;
+	color: white;
+	padding:8% 5% 2%;
+
+}
+.songImg{
+	background: url(Images/EineKleine.png) top center no-repeat;
+	background-size: cover;
+	width: 90%;
+	height: 85%;
+	margin: 0px auto 10px;
+	background-color: #dcf0fa;
+}
+
+.audioCont{
+	background: url(Images/background.png) bottom center repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.colLeft{
+	height: 500px;
+	width: 35%;
+	display: block;
+	float: left;
+	border-top: red 4px solid;
+}
+.colMid p{
+	height: 20px;
+	width: 80%;
+	padding: 5%;
+    margin: 5%;
+	background-color: #234788;
+	text-align: center;
+	font-family: tahoma;
+	font-size: 20px;
+	color: white;
+}
+
+.colRight{
+	height: 500px;
+	display: block;
+	border-top: red 4px solid;
+	background-color: #234788;
+	float:right;
+	width: 40%;
+}
+
+footer{
+	width: 100%;
+	padding: 2% 0px;
+	background-color: #0a141f;
+	display: block;
+	float: left;
+	border-top: red 4px solid; 
+}
+.fcont{
+	width: 70%;
+	text-align: center;
+	margin: 0px auto;
+	align-items: center;
+}
+
+.fcont a{
+	color: white;
+	font-size: 20px;
+	font-family: Georgia;
+}
+.fcont p{
+	color: white;
+}

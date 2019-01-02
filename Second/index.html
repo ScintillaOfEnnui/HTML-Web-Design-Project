@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Height</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="getHeight.js"></script>
+</head>
+<body>
+    <header>
+        <div class="topbox"> 
+            <h1>Compare</h1> 
+            <br> <br> <br>
+            <p class="pcont">I made this webpage to experiment with accessing elements using javascript functions. My idea was to get an input and modify particular elements to create something cool. This is the result(minus the cool part).</p>
+        </div>
+    </header>
+    <nav id="nav">
+            <a id="logo" class="logo" href="/HTML/First/index.html">
+                <img src="Images/catface.png">
+            </a>
+            <div class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn">Projects 
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">2 Columns</a>
+                        <a href="#">3 Columns</a>
+                        <a href="#">4 Columns</a>
+                    </div>
+                </div>
+                <a href="#FAQs">FAQs</a>
+                <a href="#About">About</a> 
+            </div>    
+    </nav>
+    <div class="bg-modal">
+        <div class="modal-contents">
+
+            <form action="">
+                <input id="sbName" type="text" placeholder="Name">
+                <input id="sbHeight" type="text" placeholder="Height in Inches*">
+
+                <button type="button" onClick="Submit()">Submit</button>
+                <p>*Note: 1 foot = 12 inches</p>
+
+            </form>
+
+        </div>
+    </div>
+
+    <div id= "You" class="Us">
+        <button id="btnSolveL" type="button" onClick="SolveL()">Me</button> 
+    </div>
+    <div id= "Me" class="Us">
+        <button id="btnSolveR" type="button" onClick="SolveR()">You</button>
+    </div>
+    <div class="rbox"> 
+        <div class="content">
+            <div id="rcircle"></div>
+            <div id="rarms"></div>
+            <div id="rbody"></div>
+            <div id="rfeet"></div>
+        </div>
+    </div>
+    <div class="lbox">
+        <div class="content"> 
+            <div id="lcircle"></div>
+            <div id="larms"></div>
+            <div id="lbody"></div>
+            <div id="lfeet"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="fcont" >
+            <a href="/">a<img src=""></a>
+            <a href="/">a<img src=""></a>
+            <a href="/">a<img src=""></a>
+            <a href="/">a<img src=""></a>
+            <p>&copy;2018</p>
+        </div>
+    </footer>
+    
+
+
+    <script src="scroll.js"></script>
+
+    
+
+</body>
+</html>

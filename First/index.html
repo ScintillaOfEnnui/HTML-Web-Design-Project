@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Design Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav id="nav">
+            <a id="logo" class="logo" href="/HTML/First/index.html">
+                <img src="Images/catface.png">
+            </a>
+            <div class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn">Projects 
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">2 Columns</a>
+                        <a href="#">3 Columns</a>
+                        <a href="#">4 Columns</a>
+                    </div>
+                </div>
+                <a href="#FAQs">FAQs</a>
+                <a href="#About">About</a> 
+            </div>    
+    </nav>
+    <div class="topbox"> 
+        <h1>Welcome</h1> 
+        <br> <br> <br>
+        <p class="pcont">There is no physical evidence to say that today is Wednesday, we all just have to trust that someone has kept count since the first one ever.</p>
+    </div>
+    <div class="botbox"> 
+        <p>Projects</p> 
+        <div id="pr" class="proj">
+            <a href="/HTML/Second/index.html">
+                <img src="Images/pr1.jpg">
+            </a>
+            <h2 class="h2h3" >How tall are you compared to me?</h2>
+            <h3 class="h2h3" >This Webpage was made using a 2-Column Layout.</h3>
+        </div>
+        <div id="pr" class="proj">
+            <a href="/HTML/Third/index.html">
+                <img src="Images/pr2.jpg">
+            </a>
+            <h2 class="h2h3" >Music Player and Song Lyrics</h2>
+            <h3 class="h2h3" >This Webpage was made using a 3-Column Layout.</h3>
+        </div>
+        <div id="pr" class="proj">
+            <a href="/HTML/Fourth/index.html">
+                <img src="Images/YeayiwR.jpg">
+            </a>
+            <h2 class="h2h3" >Baybayin</h2>
+            <h3 class="h2h3" >This Webpage was made using a 4-Column Layout. </h3>
+        </div>
+    </div>
+    <footer>
+        <div class="fcont" >
+            <a href="/">a<img src=""></a>
+            <a href="/">a<img src=""></a>
+            <a href="/">a<img src=""></a>
+            <a href="/">a<img src=""></a>
+            <p>&copy;2018</p>
+        </div>
+    </footer>
+    <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav").style.top = "0";
+        document.getElementById("logo").style.opacity = "1.0";
+    } else {
+        document.getElementById("nav").style.top = "-80px";
+        document.getElementById("logo").style.opacity = "0.0";
+    }
+    prevScrollpos = currentScrollPos;
+    }
+    </script>
+</body>
+</html>

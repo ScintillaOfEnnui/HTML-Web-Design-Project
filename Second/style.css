@@ -1,0 +1,287 @@
+*{margin: 0; padding: 0; font-family: Arial}
+body{
+	width: 100%;
+	height: auto;
+}
+header{
+	background: url(Images/background.jpg)center center no-repeat;
+	background-size: cover;
+	background-color: #222222;
+	width: 100%;
+	height: 700px;
+	float: left;
+}
+.topbox{
+	padding: 20px;
+	margin: 150px auto 0px;
+	height: 450px;
+	width: 80%;
+}
+
+.topbox h1{
+	color: white;
+	font-size: 100px;
+	font-family: Georgia;
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+.topbox p{
+	color: white;
+	font-size: 40px;
+	font-family: Tahoma;
+	text-align: center;
+	width: 100%;
+	display: block;
+	text-shadow: 2px 2px 8px #000;
+}
+
+nav{
+	width: 80%;
+	background-color: rgba(1,1,1,0.6);
+	height: 120px;
+	position: fixed;
+	padding: 0px 10%;
+	top: 0px;
+	z-index: 100;
+}
+
+.logo{
+	height: 120px;
+	width: 30%;
+	display: flex;
+	float: left;
+}
+
+.logo img{
+	width: 100%;
+	height: 120px;
+}
+.logo img:hover{
+	opacity:0.8;
+	padding: 2px;
+}
+
+.navbar{
+  overflow: hidden;
+  font-family: Arial;
+  height: 120px;
+  width: 30%;
+  display:table-cell;
+  vertical-align: bottom;
+}
+
+.navbar a{
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 8px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.dropdown{
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn{
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 8px 25px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+  background-color: orange;
+
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 105px;
+  z-index: 1;
+  border-left: white 1px solid;
+}
+
+.dropdown-content a{
+  float: none;
+  color: black;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover{
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.Us{
+	width: 45%;
+	border: #000 1px solid;
+	font-family: Tahoma;
+	text-align: center;
+	background-color: #555;
+}
+
+#Me{
+	margin: 5% 4% 0% 0px;
+	float: right;
+}
+#You{
+	margin: 5% 0px 0% 4%;
+	float: left;
+}
+
+.rbox{
+	border: #383838 1px solid;
+	width: 45%;
+	height: 700px;
+	background-color: #444444;
+	margin: 0% 4% 5% 0px;
+	float:right;
+}
+.lbox{
+	border: #383838 1px solid;
+	width: 45%;
+	height: 700px;
+	background-color: #444444;
+	margin: 0% 0px 5% 4%;
+	float:left;
+}
+
+.content{
+	display: table-cell;
+  	vertical-align: bottom;
+  	height: inherit;
+  	width: inherit;
+}
+
+#rcircle {  
+	height: 0;
+  	width: 0;
+  	background-color: #555;
+ 	border-radius: 50%;
+ 	margin: 10px auto 0px;
+}
+#rarms {
+	height: 0;
+  	width: 0;
+	background-color: #555;
+	margin: 0px auto;
+}
+#rbody {
+	height: 0;
+  	width: 0;
+	background-color: #555;
+	margin: 0px auto;
+}
+
+#rfeet {
+	height: 0;
+  	width:0;
+ 	border-left: 25px solid #555;
+ 	border-right: 25px solid #555;
+  	margin: 0px auto;
+}
+
+#lcircle {
+    height: 92.4px;
+  	width: 92.4px;
+  	background-color: #555;
+ 	border-radius: 50%;
+ 	margin: 10px auto 0px;
+}
+
+#larms {
+	height: 23.1px;
+	width: 304.92px;
+	background-color: #555;
+	margin: 0px auto;
+}
+
+#lbody {
+	height: 207.9px;
+	width: 110.88px;
+	background-color: #555;
+	margin: 0px auto;
+}
+
+#lfeet {
+	height: 138.6px;
+  	width: 41.58px;
+ 	border-left: 25px solid #555;
+ 	border-right: 25px solid #555;
+  	margin: 0px auto;
+}
+
+footer{
+	width: 100%;
+	padding: 2% 0px;
+	background-color: #0a141f;
+	clear: both;
+}
+.fcont{
+	width: 70%;
+	text-align: center;
+	margin: 0px auto;
+	align-items: center;
+}
+
+.fcont a{
+	color: white;
+	font-size: 20px;
+	font-family: Georgia;
+}
+.fcont p{
+	color: white;
+}
+
+
+#test{
+	width:50px;
+	height: 50px;
+	background-color: black;
+	color:white;
+}
+
+.bg-modal {
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 850px;
+	position: absolute;
+	top: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-contents {
+	height: 300px;
+	width: 500px;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 4px;
+}
+
+input {
+	margin: 15px auto;
+	display: block;
+	width: 50%;
+	padding: 8px;
+	border: 1px solid gray;
+}
